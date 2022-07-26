@@ -1,0 +1,56 @@
+body{
+    background-image: url(bulletin\ \ board.jpg);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    text-shadow: 10px 0px 5px black;
+}
+
+#form1{
+    background-image: url(row\ page.jpg);
+    padding: 30px;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.cards:last-child{ 
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: unset;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+    
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    } 
+
+.delete {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card:hover .delete {
+    opacity: 1;
+    transition: opacity 0.5 ease;
+}
+
+.delete span {
+    display: none;
+}
+
+.cards{
+    /* width: 320px; */
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
